@@ -17,7 +17,12 @@ module.exports = {
         background: '#05050F',
         primary: '#191932',
         secondary: '#6A6A9F',
-        highlight: '#176BF8'
+        highlight: '#176BF8',
+        skypurple: '#370648',
+        skyred: '#E8475C',
+      },
+      screens: {
+        'md': '870px'
       },
     },
   },
