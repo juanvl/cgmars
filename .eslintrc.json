@@ -4,9 +4,11 @@
     "es2021": true
   },
   "extends": [
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
     "standard-with-typescript",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended" // needs to be the last
   ],
   "overrides": [],
@@ -17,10 +19,13 @@
     "project": ["./tsconfig.json"]
   },
   "plugins": [
-    "react"
+    "react",
+    "jsx-a11y"
   ],
   "rules": {
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-floating-promises": "off"
   },
   "settings": {
     "react": {
